@@ -1,77 +1,145 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+/* Estilo geral */
+body {
+    font-family: Tahoma, sans-serif;
+    background: linear-gradient(to bottom, #f4e4d7, #fffff0);
+    margin: 0;
+    padding: 0;
+    color: #800000;
 }
 
-body {
-  background-color: #111;
-  color: #ffff;
-}
+
 
 /* Cabeçalho */
-header .banner {
-  background: url('https://media.discordapp.net/attachments/960967808089460746/1317642121985130526/1500x500.png?ex=675f6d5a&is=675e1bda&hm=7aefd549bd89a701e636c9ddaf69d0d35056a12d3e6ba9b19e1681983924fd01&=&format=webp&quality=lossless&width=1200&height=400') no-repeat center/cover;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+    background-color: #800000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-header h1 {
-  font-size: 2.5em;
-  color: #a854f7;
+/* Container principal */
+.container {
+    width: 70%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #800000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-  list-style: none;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+/* Lista de tópicos */
+.topic-list {
+    list-style: none;
+    padding: 0;
 }
 
-nav li {
-  margin: 0 20px;
+.topic-list li {
+    padding: 15px;
+    border-bottom: 1px solid #d3b7a1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffaf0;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+.topic-list li:hover {
+    background-color: #f9e4c8;
 }
 
-nav a:hover {
-  color: #7b09e5;
+/* Botão */
+.button {
+    background-color: #800000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Seções */
-section {
-  margin: 30px;
+.button:hover {
+    background-color: #600000;
 }
 
-section h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #7b09e5;
+/* Caixa de informações */
+.info-box {
+    background: #fff8e1;
+    border: 2px solid #800000;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+/* Footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #800000;
+    color: white;
+    margin-top: auto;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover {
+    text-decoration: underline;
 }
 
-.filmes {
-  display: flex;
-  gap: 15px;
-  overflow-x: auto;
+/* Conta */
+
+.auth-container {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #800000;
+    background-color: #f8e0e0;
+    border-radius: 8px;
 }
 
-.filmes img {
-  border-radius: 5px;
-  width: 150px;
-  height: 220px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+.auth-container input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.filmes img:hover {
-  transform: scale(1.1);
+.auth-container button {
+    background-color: #800000;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.auth-container button:hover {
+    background-color: #a00000;
+}
+
+.auth-container a {
+    color: #800000;
+    text-decoration: none;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
 }
