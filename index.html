@@ -3,70 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carniça Filmes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bananil Vibes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="banner">
-            <h1>Carniça Filmes</h1>
+
+    <div class="header">Lixeira dos Imbu</div>
+    
+    <div class="container">
+        
+        <div class="info-box">
+            <strong>O que é este fórum?</strong>
+            <p>Este é um fórum para maconheiros, usuarios de linux, endividados, motoboys e emigrantes do Camboja.</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Mais Odiados</a></li>
-                <li><a href="#">OUT OF WORK</a></li>
-                <li><a href="#">Contato</a></li>
+
+        <div class="board-list">
+            <h2>Pautas Quentes</h2>
+            <ul class="topic-list">
+                <li><a href="#">Filmes Filmes</a></li>
+                <li><a href="#">Video Games</a></li>
+                <li><a href="/eco">Ecossocialismo</a></li>
+                <li><a href="#">Música</a></li>
+                <li><a href="#">Bostileiros</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
 
-    <!-- Conteúdo Principal -->
-    <main>
-        <section class="lancamentos">
-            <h2>Lançamentos</h2>
-            <div class="filmes">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 1">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 2">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 3">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 4">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 5">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 6">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 7">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 8">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 9">
-            </div>
-        </section>
+       
+    </div>
 
-        <section class="adicionados">
-            <h2>Velharia</h2>
-            <div class="filmes">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 10">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 11">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 12">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 13">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 14">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 15">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 16">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 17">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 18">
-            </div>
-        </section>
-        <section class="adicionados">
-            <h2>Bossal Recomenda</h2>
-            <div class="filmes">
-                <a href="filme1.html"><img src="https://via.placeholder.com/150x220" alt="Filme 19"></a>
-                <img src="https://via.placeholder.com/150x220" alt="Filme 20">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 21">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 22">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 23">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 24">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 25">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 26">
-                <img src="https://via.placeholder.com/150x220" alt="Filme 27">
-            </div>
-        </section>
-    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Lixeira dos Imbu. Casa do Salomão Company Todos os direitos reservados.</p>
+        <p><a href="#">Regras</a> | <a href="#">Contato</a> | <a href="#">Sobre</a></p>
+    </footer>
 </body>
 </html>
