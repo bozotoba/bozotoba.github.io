@@ -1,1 +1,145 @@
+/* Estilo geral */
+body {
+    font-family: Tahoma, sans-serif;
+    background: linear-gradient(to bottom, #f4e4d7, #fffff0);
+    margin: 0;
+    padding: 0;
+    color: #800000;
+}
 
+
+
+/* Cabeçalho */
+.header {
+    background-color: #800000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Container principal */
+.container {
+    width: 70%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #800000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de tópicos */
+.topic-list {
+    list-style: none;
+    padding: 0;
+}
+
+.topic-list li {
+    padding: 15px;
+    border-bottom: 1px solid #d3b7a1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffaf0;
+}
+
+.topic-list li:hover {
+    background-color: #f9e4c8;
+}
+
+/* Botão */
+.button {
+    background-color: #800000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #600000;
+}
+
+/* Caixa de informações */
+.info-box {
+    background: #fff8e1;
+    border: 2px solid #800000;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+/* Footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #800000;
+    color: white;
+    margin-top: auto;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Conta */
+
+.auth-container {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #800000;
+    background-color: #f8e0e0;
+    border-radius: 8px;
+}
+
+.auth-container input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-container button {
+    background-color: #800000;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.auth-container button:hover {
+    background-color: #a00000;
+}
+
+.auth-container a {
+    color: #800000;
+    text-decoration: none;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
